@@ -19,6 +19,9 @@ print(account.name)
 print(account.get_balance())
 account.deposit(500)
 print(account.get_balance())
+account.deposit(-100)  # This will trigger the error message
+print(account.get_balance())
+
 
 
         
