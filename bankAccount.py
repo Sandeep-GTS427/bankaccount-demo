@@ -21,6 +21,8 @@ account.deposit(500)
 print(account.get_balance())
 account.deposit(-100)  # This will trigger the error message
 print(account.get_balance())
+print(account.__balance)  #This will raise an AttributeError because __balance is private
+print(account._BankAccount__balance)  # This will access the private variable using name mangling
 
 
 
